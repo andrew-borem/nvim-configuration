@@ -18,6 +18,7 @@ local plugins = {
 		"nvim-lualine/lualine.nvim",
 		"nvim-tree/nvim-tree.lua",
 		"nvim-tree/nvim-web-devicons",
+		"mbbill/undotree",
 		{ 'williamboman/mason.nvim' },
 		{ 'williamboman/mason-lspconfig.nvim' },
 		{
