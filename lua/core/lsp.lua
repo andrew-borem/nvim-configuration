@@ -101,6 +101,22 @@ local servers = {
 	-- tsserver = {},
 	-- html = { filetypes = { 'html', 'twig', 'hbs'} },
 
+	phpactor = {},
+	ansiblels = {},
+	bashls = {},
+	cssls = {},
+	dockerls = {},
+	docker_compose_language_service = {},
+	graphql = {},
+	html = {},
+	jsonls = {},
+	tsserver = {},
+	marksman = {},
+	pyright = {},
+	sqlls = {},
+	terraformls = {},
+	volar = {},
+	taplo = {},
 	lua_ls = {
 		Lua = {
 			workspace = { checkThirdParty = false },
@@ -109,6 +125,7 @@ local servers = {
 			-- diagnostics = { disable = { 'missing-fields' } },
 		},
 	},
+
 }
 
 -- Setup neovim lua configuration
