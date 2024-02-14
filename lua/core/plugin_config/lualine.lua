@@ -1,7 +1,7 @@
 require('lualine').setup {
 	options = {
 		icons_enabled = true,
-		theme = 'gruvbox',
+		theme = 'nord',
 	},
 	sections = {
 		lualine_a = {
@@ -9,6 +9,11 @@ require('lualine').setup {
 				'filename',
 				path = 1
 			}
-		}
+		},
+		lualine_b = { 'branch', 'diff', 'diagnostics' },
+		lualine_c = { 'mode' },
+		lualine_x = { 'filetype' },
+		lualine_y = { 'filesize', 'fileformat' },
+		lualine_z = { 'location' }
 	}
 }
