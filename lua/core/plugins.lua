@@ -17,6 +17,7 @@ local plugins = {
 		"shaunsingh/nord.nvim",
 		"nvim-lualine/lualine.nvim",
 		"nvim-tree/nvim-tree.lua",
+		"tpope/vim-fugitive",
 		"nvim-tree/nvim-web-devicons",
 		"mbbill/undotree",
 		{
