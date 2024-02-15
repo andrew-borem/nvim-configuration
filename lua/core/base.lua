@@ -1,8 +1,14 @@
 vim.opt.guicursor = ""
 vim.opt.smartindent = true
-vim.opt.wrap = false
 vim.opt.scrolloff = 8
 
+-- soft wrap text to window, broken by word
+vim.opt.textwidth = 0
+vim.opt.wrapmargin = 2
+vim.opt.wrap = true
+vim.opt.linebreak = true
+
+-- this disables the mouse wheel (and also the arrow keys)
 vim.keymap.set("", "<up>", "<nop>", { noremap = true })
 vim.keymap.set("", "<down>", "<nop>", { noremap = true })
 vim.keymap.set("i", "<up>", "<nop>", { noremap = true })
