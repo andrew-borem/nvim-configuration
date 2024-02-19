@@ -18,6 +18,8 @@ vim.opt.mouse = ""
 vim.g.mapleader = ' '
 vim.g.maplocalleader = ' '
 
+vim.opt.scrolloff = 999
+
 vim.opt.backspace = '2'
 vim.opt.showcmd = true
 vim.opt.laststatus = 2
