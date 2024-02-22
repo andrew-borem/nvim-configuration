@@ -16,16 +16,9 @@ local plugins = {
 	{
 		"shaunsingh/nord.nvim",
 		"nvim-lualine/lualine.nvim",
+		"nvim-tree/nvim-tree.lua",
 		"tpope/vim-fugitive",
-		{
-			"nvim-neo-tree/neo-tree.nvim",
-			branch = "v3.x",
-			dependencies = {
-				"nvim-lua/plenary.nvim",
-				"nvim-tree/nvim-web-devicons",
-				"MunifTanjim/nui.nvim",
-			}
-		},
+		"nvim-tree/nvim-web-devicons",
 		"mbbill/undotree",
 		{
 			{ 'williamboman/mason.nvim', config = true },
