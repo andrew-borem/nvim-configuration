@@ -19,6 +19,10 @@ local plugins = {
 		"nvim-tree/nvim-tree.lua",
 		"tpope/vim-fugitive",
 		"nvim-tree/nvim-web-devicons",
+		{
+			'wthollingsworth/pomodoro.nvim',
+			dependencies = 'MunifTanjim/nui.nvim'
+		},
 		"mbbill/undotree",
 		{
 			{ 'williamboman/mason.nvim', config = true },

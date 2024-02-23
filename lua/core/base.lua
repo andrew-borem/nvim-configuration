@@ -35,4 +35,5 @@ vim.opt.expandtab = false
 vim.opt.number = true
 vim.opt.relativenumber = true
 
-vim.keymap.set('n', '<leader>h', ':nohlsearch<CR>')
+-- clear search highlight on return
+vim.keymap.set('n', '<leader>h', ':noh<CR><CR>')
