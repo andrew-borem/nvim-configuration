@@ -82,7 +82,8 @@ require('mason-lspconfig').setup {
 		"sqlls",
 		"terraformls",
 		"volar",
-		"taplo"
+		"taplo",
+		"gopls"
 	},
 }
 -- Enable the following language servers
@@ -117,6 +118,7 @@ local servers = {
 	terraformls = {},
 	volar = {},
 	taplo = {},
+	gopls = {},
 	lua_ls = {
 		Lua = {
 			workspace = { checkThirdParty = false },

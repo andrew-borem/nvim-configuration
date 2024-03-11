@@ -16,8 +16,8 @@ local plugins = {
 	{
 		{
 			"catppuccin/nvim",
-			name = "catppuccin", 
-			priority = 1000 
+			name = "catppuccin",
+			priority = 1000
 		},
 		"nvim-lualine/lualine.nvim",
 		"nvim-tree/nvim-tree.lua",
@@ -66,6 +66,12 @@ local plugins = {
 			}
 		},
 		{ 'folke/which-key.nvim', opts = {} },
+		"fatih/vim-go",
+		{
+			"ThePrimeagen/harpoon",
+			branch = "harpoon2",
+			dependencies = { "nvim-lua/plenary.nvim" }
+		},
 		require 'core.autoformat'
 	}
 }
