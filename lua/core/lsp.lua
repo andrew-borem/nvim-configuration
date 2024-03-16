@@ -25,6 +25,9 @@ local on_attach = function(_, bufnr)
 	nmap('<leader>ds', require('telescope.builtin').lsp_document_symbols, '[D]ocument [S]ymbols')
 	nmap('<leader>ws', require('telescope.builtin').lsp_dynamic_workspace_symbols, '[W]orkspace [S]ymbols')
 
+	local bufopts = { noremap = true, silent = true, buffer = bufnr }
+	vim.keymap.set("n", "<space>d", vim.diagnostic.open_float, bufopts)
+
 	-- See `:help K` for why this keymap
 	nmap('K', vim.lsp.buf.hover, 'Hover Documentation')
 	nmap('<C-k>', vim.lsp.buf.signature_help, 'Signature Documentation')
@@ -43,7 +46,7 @@ local on_attach = function(_, bufnr)
 	end, { desc = 'Format current buffer with LSP' })
 end
 
--- document existing key chains
+
 require('which-key').register {
 	['<leader>c'] = { name = '[C]ode', _ = 'which_key_ignore' },
 	['<leader>d'] = { name = '[D]ocument', _ = 'which_key_ignore' },
