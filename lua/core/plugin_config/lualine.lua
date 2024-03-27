@@ -11,7 +11,7 @@ require('lualine').setup {
 			}
 		},
 		lualine_b = { 'branch', 'diff', 'diagnostics' },
-		lualine_c = { 'mode', require('pomodoro').statusline },
+		lualine_c = { 'mode' },
 		lualine_x = { 'filetype' },
 		lualine_y = { 'filesize', 'fileformat' },
 		lualine_z = { 'location' }
