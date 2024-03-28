@@ -8,13 +8,6 @@ vim.opt.wrapmargin = 2
 vim.opt.wrap = true
 vim.opt.linebreak = true
 
--- this disables the mouse wheel (and also the arrow keys)
-vim.keymap.set("", "<up>", "<nop>", { noremap = true })
-vim.keymap.set("", "<down>", "<nop>", { noremap = true })
-vim.keymap.set("i", "<up>", "<nop>", { noremap = true })
-vim.keymap.set("i", "<down>", "<nop>", { noremap = true })
-vim.opt.mouse = ""
-
 vim.g.mapleader = ' '
 vim.g.maplocalleader = ' '
 
@@ -37,3 +30,4 @@ vim.opt.relativenumber = true
 
 -- clear search highlight on return
 vim.keymap.set('n', '<leader>h', ':noh<CR><CR>')
+vim.keymap.set('n', '<leader>fphp', ':!pint % <CR>')
